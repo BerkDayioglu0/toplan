@@ -3,9 +3,10 @@
 > Her aşama sonunda güncellenir. Yeni bir Claude oturumu buradan nerede kaldığımızı anlar.
 
 ## Şu anki durum
-- **Sıradaki adım:** Aşama 0 — Hazırlık (araçları kontrol et, git repo başlat)
-- **Tamamlanan aşamalar:** yok
-- Proje klasöründe şimdilik sadece `SPEC.md`, `CLAUDE.md` ve bu dosya var.
+- **Sıradaki adım:** Aşama 1 — İskelet (Django projesi + Next.js, `/api/health/`)
+- **Tamamlanan aşamalar:** Aşama 0
+- Repo: https://github.com/BerkDayioglu0/toplan (public). Bu repoda git e-postası `berk.dayioglu@executionai.net` (local ayar), aktif gh hesabı `BerkDayioglu0`.
+- Kurulu sürümler: Python 3.12.10, uv 0.12.9, Node 22.12.0, npm 11.0.0, git 2.55.0, gh 2.96.0, VS Code 1.140.
 
 ## Bu projeden önce (Cowork sohbetinde) işlenen dersler
 
@@ -39,6 +40,16 @@
 - **Ders 4 — i18n** → Aşama 9'da
 - **Ders 5 — Sıfırdan proje kontrol listesi** → proje boyunca, Aşama 12 sonunda özet
 
+### Aşama 0 — Terminal, Git, sanal ortam
+- Terminal = bilgisayarla yazışmak; shell = komutu yorumlayan (PowerShell). PATH = programların arandığı liste; kurulumdan sonra terminali yeniden aç.
+- Git = kayıt noktası. Üç bölge: çalışma klasörü →`git add`→ sahne →`git commit`→ geçmiş →`git push`→ GitHub. Git ≠ GitHub.
+- `.gitignore`: `.env`, `.venv/`, `node_modules/`, `db.sqlite3` girmez; `.env.example` girer (`!` ile istisna).
+- `.gitattributes`: satır sonu her yerde LF (Docker/Linux uyumu).
+- `uv` ≈ npm, `pyproject.toml` ≈ `package.json`, `uv.lock` ≈ `package-lock.json`, `.venv/` ≈ `node_modules/`.
+- `git commit --amend` yeni hash üretir → sadece push edilmemiş commit'te kullan. Paylaşılmış geçmiş yeniden yazılmaz.
+- **Tekrar edilecek:** Mini sınavın üç sorusunu Berk cevaplamadı, açıklama istedi. Aşama 1 başında bunları kısaca sor (add/commit farkı, neden `.venv` repoda yok, amend riski).
+
 ## Günlük
 <!-- Her aşama sonunda en üste ekle: tarih — aşama — ne yapıldı — öğrenilenler — sıradaki adım -->
+- 2026-10-07 — Aşama 0 — Araçlar kontrol edildi (hepsi kuruluydu), git repo + `.gitignore` + `.gitattributes`, GitHub hesabı BerkDayioglu0'a geçildi, repo public olarak push edildi. Sıradaki: Aşama 1.
 - 2026-10-06 — Proje planlandı (Cowork'te). SPEC, CLAUDE.md ve bu dosya oluşturuldu.
