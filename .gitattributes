@@ -1,0 +1,5 @@
+# Metin dosyalarında satır sonu her yerde LF olsun (Windows, Mac, Linux/Docker aynı dosyayı görsün)
+* text=auto eol=lf
+
+# PowerShell betikleri Windows'a özel, CRLF kalsın
+*.ps1 text eol=crlf
